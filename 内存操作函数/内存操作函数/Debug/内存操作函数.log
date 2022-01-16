@@ -1,7 +1,7 @@
-﻿生成启动时间为 2022\1\14 星期五 20:10:28。
+﻿生成启动时间为 2022\1\15 星期六 22:08:49。
      1>项目“K:\Allen-C-Learning\内存操作函数\内存操作函数\内存操作函数.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在对“Debug\内存操作函数.unsuccessfulbuild”执行 Touch 任务。
+         正在创建“Debug\内存操作函数.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt "内存操作函数.c"
          内存操作函数.c
@@ -18,4 +18,4 @@
 
 生成成功。
 
-已用时间 00:00:01.65
+已用时间 00:00:01.70
