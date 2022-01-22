@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1642830180 source:k:\allen-c-learning\codeblocks\单链表\main.c
+	"SList.h"
+
+1642776157 k:\allen-c-learning\codeblocks\单链表\slist.h
+	<stdio.h>
+	<stdlib.h>
+
+1642829772 source:k:\allen-c-learning\codeblocks\单链表\slist.c
+	"SList.h"
+
