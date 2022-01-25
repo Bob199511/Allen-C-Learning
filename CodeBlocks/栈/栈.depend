@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1643112130 source:k:\allen-c-learning\codeblocks\ջ\main.c
+	"Stack.h"
+
+1643111745 k:\allen-c-learning\codeblocks\ջ\stack.h
+	<stdio.h>
+	<stdlib.h>
+	<error.h>
+	<string.h>
+	<stdbool.h>
+
+1643112048 source:k:\allen-c-learning\codeblocks\ջ\stack.c
+	"Stack.h"
+
