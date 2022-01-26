@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1643158352 source:k:\allen-c-learning\codeblocks\队列\main.c
+	"queue.h"
+
+1643158278 k:\allen-c-learning\codeblocks\队列\queue.h
+	<stdio.h>
+	<stdlib.h>
+	<error.h>
+	<stdbool.h>
+	<assert.h>
+
+1643158278 source:k:\allen-c-learning\codeblocks\队列\queue.c
+	"queue.h"
+
