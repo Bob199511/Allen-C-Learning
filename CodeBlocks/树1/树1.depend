@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1643269771 source:k:\allen-c-learning\codeblocks\Ê÷1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
