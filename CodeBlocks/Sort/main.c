@@ -3,7 +3,7 @@
 #include <time.h>
 #include <windows.h>
 
-#define size 2000000
+#define size 11
 void swap(int *p1, int *p2){
     int temp = *p1;
     *p1 = *p2;
@@ -105,8 +105,29 @@ void BubbleSort(int *arr){
     }
 }
 
-void QuickSort(int *arr, int start, int end){
+void ExchangMid(int *arr, int start, int end){
+    int mid = (start + end) / 2;
+    if(arr[mid] > arr[start]){//三数取中，避免出现最坏情况（数列已经有序）
+        if(arr[mid] > arr[end]){
+            if(arr[end] > arr[start])
+                swap(&arr[mid], &arr[end]);
+            else
+                swap(&arr[mid], &arr[start]);
+        }
+
+    }
+    else{
+        if(arr[mid] < arr[end]){
+            if(arr[end] > arr[start])
+                swap(&arr[mid], &arr[start]);
+            else
+                swap(&arr[mid], &arr[end]);
+        }
+    }
+}
+void QuickSort1(int *arr, int start, int end){
     int i = start, j = end;
+    ExchangMid(arr, start, end);
     int pivot = arr[start];//i代表队列前面，筛选小于pivot的元素；j筛选大于pivot的元素
     while(i < j){
         while(pivot <= arr[j] && i < j) --j;
@@ -116,9 +137,81 @@ void QuickSort(int *arr, int start, int end){
     }
     arr[i] = pivot;
     if(start < end){
-    QuickSort(arr, start, i - 1);
-    QuickSort(arr, i + 1, end);
+    QuickSort1(arr, start, i - 1);
+    QuickSort1(arr, i + 1, end);
     }
+}
+
+int FindPivot2(int* arr, int start, int end){//双指针法
+    int p = start, q = end;//左右指针法
+    while(p < q){
+        while(arr[q] > arr[start] && p < q) --q;
+        while(arr[p] <= arr[start]&& p < q) ++p;
+        swap(&arr[p], &arr[q]);
+    }
+    swap(&arr[start], &arr[p]);
+    return p;
+}
+
+void QuickSort2(int* arr, int start, int end){
+    int pivot = FindPivot2(arr, start, end);
+    if(start < end){
+        QuickSort2(arr, start, pivot);
+        QuickSort2(arr, pivot + 1, end);
+    }
+    else
+        return;
+}
+
+int FindPivot3(int* arr, int start, int end){//
+    int cur = start, rear = start + 1;//前后指针法
+    while(rear <= end){
+        if(arr[rear] <= arr[start]){
+            cur++;
+            swap(&arr[rear], &arr[cur]);
+        }
+        ++rear;
+    }
+    swap(&arr[start], &arr[cur]);
+    return cur;
+}
+
+void QuickSort3(int* arr, int start, int end){
+    int pivot = FindPivot3(arr, start, end);
+    if(start < end){
+        QuickSort3(arr, start, pivot);
+        QuickSort3(arr, pivot + 1, end);
+    }
+    else
+        return;
+}
+
+
+void MergeSort(int *arr, int left, int right){
+    int mid = (left + right) / 2;
+    if(left < right){
+        MergeSort(arr, left, mid);
+        MergeSort(arr, mid + 1, right);
+    }
+    else
+        return;
+    int* a = (int *)malloc(size * sizeof(int));
+    int i = left, start1 = left, start2 = mid + 1;
+    while(start1 <= mid && start2 <= right){
+        if(arr[start1] <= arr[start2])
+            a[i++] = arr[start1++];
+        else
+            a[i++] = arr[start2++];
+    }
+    while(start1 <= mid)
+        a[i++] = arr[start1++];
+    while(start2 <= right)
+        a[i++] = arr[start2++];
+    for(i = left; i <= right; ++i)
+        arr[i] = a[i];
+    free(a);
+    a = NULL;
+
 }
 
 void test(){//均为升序
@@ -137,7 +230,7 @@ void test(){//均为升序
     }
     printf("\n");
 
-    int start1 = clock();
+/*  int start1 = clock();
     InsertSort(p1);
     int end1 = clock();
     for(int i = 0; i < size ; i++){
@@ -168,22 +261,30 @@ void test(){//均为升序
         //printf("%d ", p4[i]);
     }
     printf("\n%d\n",end4 - start4);
-
+*/
     int start5 = clock();
     BubbleSort(p5);
     int end5 = clock();
     for(int i = 0; i < size ; i++){
-        //printf("%d ", p5[i]);
+        printf("%d ", p5[i]);
     }
     printf("\n%d\n",end5 - start5);
 
     int start6 = clock();
-    QuickSort(p6, 0 ,size - 1);
+    QuickSort3(p6, 0 ,size - 1);
     int end6 = clock();
     for(int i = 0; i < size ; i++){
-        //printf("%d ", p6[i]);
+        printf("%d ", p6[i]);
     }
     printf("\n%d\n",end6 - start6);
+
+    int start7 = clock();
+    MergeSort(p7, 0 ,size - 1);
+    int end7 = clock();
+    for(int i = 0; i < size ; i++){
+        printf("%d ", p7[i]);
+    }
+    printf("\n%d\n",end7 - start7);
 }
 
 int main()
