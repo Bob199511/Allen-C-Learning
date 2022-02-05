@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1643983724 source:k:\allen-c-learning\王道复试\点与圆的关系\main.cpp
+	"Point.h"
+
+1643982954 k:\allen-c-learning\王道复试\点与圆的关系\head.h
+	<iostream>
+	<cstring>
+
+1643983780 k:\allen-c-learning\王道复试\点与圆的关系\point.h
+	<iostream>
+
+1643983750 source:k:\allen-c-learning\王道复试\点与圆的关系\point.cpp
+	"Point.h"
+
