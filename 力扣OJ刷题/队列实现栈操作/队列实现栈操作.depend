@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1643206700 source:k:\allen-c-learning\oj刷题\队列实现栈操作\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
