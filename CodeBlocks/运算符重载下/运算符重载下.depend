@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1644193363 source:k:\allen-c-learning\codeblocks\运算符重载下\main.cpp
+	<iostream>
+
+1644231286 source:k:\allen-c-learning\codeblocks\运算符重载下\chongzai.cpp
+	<iostream>
+	<algorithm>
+
+1644232646 source:k:\allen-c-learning\codeblocks\运算符重载下\guanxi.cpp
+	<iostream>
+	<algorithm>
+
+1644233542 source:k:\allen-c-learning\codeblocks\运算符重载下\hanshudiaoyong.cpp
+	<iostream>
+

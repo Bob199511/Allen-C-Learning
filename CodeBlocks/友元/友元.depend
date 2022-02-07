@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1644140130 source:k:\allen-c-learning\codeblocks\сят╙\main.cpp
+	<iostream>
+
+1644153964 source:k:\allen-c-learning\codeblocks\сят╙\test01.cpp
+	<iostream>
+	<cstring>
+
