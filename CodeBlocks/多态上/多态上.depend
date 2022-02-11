@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1644582595 source:k:\allen-c-learning\codeblocks\多态上\main.cpp
+	<iostream>
+
+1644584554 source:k:\allen-c-learning\codeblocks\多态上\basicconcept.cpp
+	<iostream>
+
+1644586394 source:k:\allen-c-learning\codeblocks\多态上\case1.cpp
+	<iostream>
+
+1644589404 source:k:\allen-c-learning\codeblocks\多态上\casetwo.cpp
+	<iostream>
+	<string>
+
