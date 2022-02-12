@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1644676095 source:k:\allen-c-learning\codeblocks\多态和文件操作\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
