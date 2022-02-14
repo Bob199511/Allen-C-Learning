@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1644846165 source:k:\allen-c-learning\codeblocks\职工管理系统\main.cpp
+	"workManager.h"
+	<iostream>
+
+1644846132 k:\allen-c-learning\codeblocks\职工管理系统\workmanager.h
+	<iostream>
+
+1644846132 source:k:\allen-c-learning\codeblocks\职工管理系统\test.cpp
+	"workManager.h"
+
+1644847318 source:k:\allen-c-learning\codeblocks\职工管理系统\employee.cpp
+	"employee.h"
+
+1644848427 k:\allen-c-learning\codeblocks\职工管理系统\employee.h
+	<iostream>
+	"Worker.h"
+
+1644847311 k:\allen-c-learning\codeblocks\职工管理系统\worker.h
+	<iostream>
+	<string>
+
