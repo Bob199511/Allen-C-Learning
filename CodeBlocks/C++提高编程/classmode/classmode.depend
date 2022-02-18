@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1645103729 source:k:\allen-c-learning\codeblocks\c++提高编程\classmode\main.cpp
+	<iostream>
+	<string.h>
+
+1645104537 source:k:\allen-c-learning\codeblocks\c++提高编程\classmode\main1.cpp
+	<iostream>
+	<string.h>
+
+1645105954 source:k:\allen-c-learning\codeblocks\c++提高编程\classmode\main2.cpp
+	<iostream>
+	<string.h>
+
+1645143832 source:k:\allen-c-learning\codeblocks\c++提高编程\classmode\类模板与友元.cpp
+	<iostream>
+	<string>
+
+1645145528 source:k:\allen-c-learning\codeblocks\c++提高编程\classmode\anli.cpp
+	"MyArray.hpp"
+
+1645145560 k:\allen-c-learning\codeblocks\c++提高编程\classmode\myarray.hpp
+	<iostream>
+	<string>
+

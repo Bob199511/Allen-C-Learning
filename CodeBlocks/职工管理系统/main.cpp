@@ -1,16 +1,12 @@
 #include"workManager.h"
-#include<iostream>
-using namespace std;
-#include"Worker.h"
 #include"employee.h"
-#include"manager.h"
-#include"boss.h"
-
 
 int main(){
     //测试代码
     Worker * worker = NULL;
+
     worker = new Employee(1, "张三", 1);
+
     worker->showInfo();
     WorkManager wm;
     int choice = 0;//存储用胡选项
@@ -27,6 +23,7 @@ int main(){
             wm.ExitSystem();   //退出系统
             break;
         case 1:   //增加职工
+            wm.Add_Emp();
             break;
         case 2:   //显示职工
             break;

@@ -1,22 +1,45 @@
 # depslib dependency file v1.0
-1644846165 source:k:\allen-c-learning\codeblocks\职工管理系统\main.cpp
+1644933498 source:k:\allen-c-learning\codeblocks\职工管理系统\main.cpp
 	"workManager.h"
 	<iostream>
+	"Worker.h"
+	"employee.h"
+	"manager.h"
+	"boss.h"
 
-1644846132 k:\allen-c-learning\codeblocks\职工管理系统\workmanager.h
+1644933563 k:\allen-c-learning\codeblocks\职工管理系统\workmanager.h
 	<iostream>
+	<string>
+	"Worker.h"
+	"manager.h"
+	"employee.h"
+	"boss.h"
 
 1644846132 source:k:\allen-c-learning\codeblocks\职工管理系统\test.cpp
 	"workManager.h"
 
-1644847318 source:k:\allen-c-learning\codeblocks\职工管理系统\employee.cpp
+1644849162 source:k:\allen-c-learning\codeblocks\职工管理系统\employee.cpp
 	"employee.h"
 
-1644848427 k:\allen-c-learning\codeblocks\职工管理系统\employee.h
+1644934297 k:\allen-c-learning\codeblocks\职工管理系统\employee.h
 	<iostream>
 	"Worker.h"
 
 1644847311 k:\allen-c-learning\codeblocks\职工管理系统\worker.h
 	<iostream>
 	<string>
+
+1644849159 source:k:\allen-c-learning\codeblocks\职工管理系统\boss.cpp
+	"boss.h"
+
+1644848937 k:\allen-c-learning\codeblocks\职工管理系统\boss.h
+	<iostream>
+	"Worker.h"
+
+1644849161 source:k:\allen-c-learning\codeblocks\职工管理系统\manager.cpp
+	"manager.h"
+
+1644848937 k:\allen-c-learning\codeblocks\职工管理系统\manager.h
+	<iostream>
+	"Worker.h"
 

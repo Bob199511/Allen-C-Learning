@@ -2,27 +2,43 @@
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Debug" />
 	<File name="workManager.h" open="1" top="0" tabpos="3">
-		<Cursor position="309" topLine="0" />
-		<BrowseMarks positions="299" />
+		<Cursor position="191" topLine="0" />
+		<BrowseMarks positions="184,438,585" />
 	</File>
-	<File name="employee.h" open="1" top="0" tabpos="5">
-		<Cursor position="282" topLine="0" />
+	<File name="boss.h" open="1" top="0" tabpos="6">
+		<Cursor position="201" topLine="0" />
+		<BrowseMarks positions="" />
+	</File>
+	<File name="employee.h" open="1" top="0" tabpos="4">
+		<Cursor position="136" topLine="0" />
+		<BrowseMarks positions="" />
+	</File>
+	<File name="manager.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="70" topLine="0" />
 		<BrowseMarks positions="" />
 	</File>
 	<File name="test.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="1140" topLine="0" />
+		<Cursor position="1543" topLine="56" />
 		<BrowseMarks positions="" />
 	</File>
-	<File name="boss.cpp" open="1" top="1" tabpos="10">
-		<Cursor position="333" topLine="0" />
+	<File name="boss.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="438" topLine="0" />
 		<BrowseMarks positions="" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="150" topLine="0" />
+	<File name="employee.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="153" topLine="0" />
 		<BrowseMarks positions="" />
 	</File>
-	<File name="employee.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="332" topLine="0" />
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="113" topLine="0" />
+		<BrowseMarks positions="82" />
+	</File>
+	<File name="manager.h" open="1" top="0" tabpos="10">
+		<Cursor position="135" topLine="0" />
+		<BrowseMarks positions="" />
+	</File>
+	<File name="Worker.h" open="1" top="0" tabpos="7">
+		<Cursor position="331" topLine="0" />
 		<BrowseMarks positions="" />
 	</File>
 </BrowseTracker_layout_file>
