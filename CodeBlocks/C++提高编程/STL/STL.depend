@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1645192465 source:k:\allen-c-learning\codeblocks\c++提高编程\stl\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
+1645193786 source:k:\allen-c-learning\codeblocks\c++提高编程\stl\stl2.5.2.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<string>
+
