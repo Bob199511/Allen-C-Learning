@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1644281542 source:k:\allen-c-learning\王道复试\排序与查找\main.cpp
+	<iostream>
+	<algorithm>
+
+1644287002 source:k:\allen-c-learning\王道复试\排序与查找\chengjisort.cpp
+	<iostream>
+	<algorithm>
+	<algorithm>
+	<algorithm>
+	<algorithm>
+	<algorithm>
+
+1644290189 source:k:\allen-c-learning\王道复试\排序与查找\find.cpp
+	<iostream>
+	<algorithm>
+	<iostream>
+	<algorithm>
+	<algorithm>
+
