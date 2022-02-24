@@ -101,3 +101,82 @@
 //	system("pause");
 //	return 0;
 //}
+
+////统计一个给定字符串中指定的字符出现的次数
+//#include<iostream>
+//#include<string>
+//using namespace std;
+//string str, test;
+//int sum;
+//int main(){
+//	getline(cin, str);
+//	while(str != "#"){
+//		getline(cin, test);
+//		//二重循环时间超时
+//		for(int i = 0; i < str.size(); ++i){
+//			cout << str[i] << ' ';
+//			sum = 0;
+//			for(int j = 0; j < test.size(); ++j){
+//				if(test[j] == str[i]){
+//					++sum;
+//				}
+//			}
+//			cout << sum << endl;
+//		}
+//		getline(cin, str);
+//	}
+//
+//	return 0;
+//}
+
+//符合运行时间要求
+//#include<iostream>
+//#include<string>
+//using namespace std;
+//int main (){
+//	string str;
+//	int ASCII_Count[128];
+//	string test;
+//	while(getline(cin , str)){
+//		if(str == "#"){
+//			break;
+//		}
+//		//memset(ASCII_Count, 0 , //sizeof(ASCII_Count));//每次循环初始化计数器
+//		for(int i = 0; i < 128; ++i){
+//			ASCII_Count[i] = 0;
+//		}
+//		getline(cin, test);
+//		for(int i = 0; i < test.size(); ++i){
+//			ASCII_Count[test[i]]++;
+//		}
+//		for(int i = 0; i < str.size(); ++i){
+//			cout << str[i] << ' ' << ASCII_Count[str[i]] << endl;
+//		}
+//	}
+//	return 0;
+//}
+
+//输入一行字符串，计算其中A-Z大写字母出现的次数
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+	string str;
+	int count_alpha[26];
+	while(getline(cin, str)){
+		for(int i = 0; i < 26; ++i){
+		count_alpha[i] = 0;
+		}
+		for(int i = 0; i < str.size(); ++i){
+			if(str[i] >='A' && str[i] <= 'Z'){
+				count_alpha[str[i] - 'A']++;
+			}
+		}
+		for(int i = 0; i < 26; ++i){
+			printf("%c:%d\n",i + 'A', count_alpha[i]);
+		}
+	}
+
+	return 0;
+}
