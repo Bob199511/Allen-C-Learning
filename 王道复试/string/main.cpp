@@ -156,27 +156,47 @@
 //	return 0;
 //}
 
-//输入一行字符串，计算其中A-Z大写字母出现的次数
+////输入一行字符串，计算其中A-Z大写字母出现的次数
+//#include<iostream>
+//#include<string>
+//using namespace std;
+//
+//int main(){
+//	string str;
+//	int count_alpha[26];
+//	while(getline(cin, str)){
+//		for(int i = 0; i < 26; ++i){
+//		count_alpha[i] = 0;
+//		}
+//		for(int i = 0; i < str.size(); ++i){
+//			if(str[i] >='A' && str[i] <= 'Z'){
+//				count_alpha[str[i] - 'A']++;
+//			}
+//		}
+//		for(int i = 0; i < 26; ++i){
+//			printf("%c:%d\n",i + 'A', count_alpha[i]);
+//		}
+//	}
+//
+//	return 0;
+//}
+
 #include<iostream>
+#include<cmath>
 #include<string>
 using namespace std;
 
 int main(){
 	string str;
-	int count_alpha[26];
 	while(getline(cin, str)){
-		for(int i = 0; i < 26; ++i){
-		count_alpha[i] = 0;
+		int sum = 0;
+		for(int i = str.size(), j = 0; j < str.size(); --i, ++j){
+			if(str[j] != '0')
+				sum += (str[j] - '0')*( pow(2, (float)i) - 1);
 		}
-		for(int i = 0; i < str.size(); ++i){
-			if(str[i] >='A' && str[i] <= 'Z'){
-				count_alpha[str[i] - 'A']++;
-			}
-		}
-		for(int i = 0; i < 26; ++i){
-			printf("%c:%d\n",i + 'A', count_alpha[i]);
-		}
-	}
+		cout << sum << endl;
 
+	}
 	return 0;
+
 }

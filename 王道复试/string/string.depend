@@ -1,6 +1,6 @@
 # depslib dependency file v1.0
-1645663259 source:k:\allen-c-learning\王道复试\string\main.cpp
+1645797299 source:k:\allen-c-learning\王道复试\string\main.cpp
 	<iostream>
+	<math.h>
 	<string>
-	<string.h>
 
